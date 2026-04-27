@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/learning_db
+    username: root
+    password: Ram1237@
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+app:
+  jwt:
+    secret: YourUltraSecretKeyThatIsAtLeast64CharactersLongForSecurityPurposes123!
+    expirationMs: 900000 # 15 mins
+    refreshExpirationMs: 604800000 # 7 days
